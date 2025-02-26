@@ -1,0 +1,163 @@
+/* Set a fun background */
+body {
+  background: url("https://img.freepik.com/free-photo/illustration-cute-vegetables-fruits_23-2151859021.jpg?t=st=1739749977~exp=1739753577~hmac=a8ca62af8a4e703e68f3c9cd71904e8582ac322ed63eef9d202a7b774ff53f88&w=2000") no-repeat center center/cover;
+  color: white;
+  font-family: "Comic Sans MS", "Arial", sans-serif;
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* Center everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make the CookWise title bigger and fun */
+.title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #FFBCB3; /* Pastel pinkish-peach color */
+  animation: bounce 1.5s infinite alternate;
+}
+
+/* Fun bounce animation for title */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Make the button bigger and fun */
+.start-btn {
+  background-color: #ffeb3b; /* Bright yellow */
+  color: #333;
+  border: none;
+  padding: 20px 40px;
+  font-size: 25px;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect: Button grows and shrinks */
+.start-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Center everything */
+.second-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Lettuce Begin Button - partially hide when clicked */
+.hidden-btn {
+  opacity: 0.3; /* Partial transparency */
+  pointer-events: none; /* Disable clicking */
+}
+
+/* "Please Cheese One" text */
+.cheese-text {
+  font-size: 2.5rem; /* Increased size */
+  font-weight: bold;
+  color: #9ACD32; /* Pastel green */
+  margin-top: 20px;
+  text-transform: uppercase; /* Optional: Makes text uppercase */
+}
+
+/* Auth buttons (Login & Signup) */
+.button-group {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.auth-btn {
+  background-color: #FFD700; /* Yellow */
+  color: white;
+  font-size: 1.5rem; /* Increased text size */
+  font-weight: bold;
+  padding: 16px 30px; /* Increased button size */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.auth-btn:hover {
+  transform: scale(1.15); /* Bigger hover effect */
+}
+
+.auth-btn:active {
+  transform: scale(0.95); /* Shrink effect when clicked */
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.signup-title {
+  font-size: 3rem;
+  color: #9ACD32; /* Pastel green */
+  margin-bottom: 20px;
+}
+
+.signup-input {
+  width: 80%;
+  max-width: 300px;
+  padding: 12px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: white; /* White input field */
+  color: black; /* Black text */
+}
+
+/* Ensure placeholder disappears on focus */
+.signup-input::placeholder {
+  color: rgba(0, 0, 0, 0.5); /* Light black (grayish) placeholder */
+  transition: opacity 0.2s ease-in-out;
+}
+
+.signup-input:focus::placeholder {
+  opacity: 0; /* Disappears when typing */
+}
+
+/* Make 'Create Account' text bigger */
+.signup-btn {
+  background-color: #FFD700; /* Yellow */
+  color: white;
+  font-size: 1.8rem; /* Bigger text */
+  padding: 15px 25px; /* Slightly bigger button */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.signup-btn:hover {
+  transform: scale(1.1);
+}
+
+.signup-btn:active {
+  transform: scale(0.95);
+}
